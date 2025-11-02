@@ -1,18 +1,9 @@
-## Getting Started
+Simple simulation modeling elevator system from the elevator control perspective. Each elevator runs as a separate thread and takes in ride request from shared queue. Demonstrating:
+- Multi-threaded behavior
+- Safe coordination using implicit wait/notifyAll from BlockingQueue
+- Using sleep() to simulate elevator movement across floors
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Possible extensions (not implemented for simplicity):
+- Detailed statistics and logging
+- Better assignment logic in ElevatorControl to avoid multiple elevators respoinding to the same floor
+- Passenger logic
